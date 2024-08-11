@@ -1,0 +1,145 @@
+:root {
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+--VeryDarkBlue: hsl(234, 12%, 34%);
+--GrayishBlue: hsl(229, 6%, 66%);
+--VeryLightGray: hsl(0, 0%, 98%);
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "PoppinsThin";
+    src: url(assets/fonts/Poppins/Poppins-Thin.ttf);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    font-family: "Poppins", sans-serif;
+}
+
+.titleCard {
+    grid-row: 1;
+    grid-column: 2/6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1 {
+    height: 15em;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    margin-top: 25%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    border-top: solid 3px var(--Cyan);
+    box-shadow:  5px 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.card1 img {
+    align-self: flex-end;
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
+
+.card1 p {
+    color: var(--GrayishBlue);
+}
+
+.card2 {
+    height: 15em;
+    grid-column: 3/5;
+    grid-row: 2;
+    border-top: solid 3px var(--Red);
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    box-shadow:  5px 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.card2 img {
+    align-self: flex-end;
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
+
+.card2 p {
+    color: var(--GrayishBlue);
+}
+
+.card3 {
+    grid-column: 3/5;
+    grid-row: 3;
+    height: 15em;
+    margin-top: -15%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    border-top: solid 3px var(--Orange);
+    box-shadow:  5px 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.card3 img {
+    align-self: flex-end;
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
+
+.card3 p {
+    color: var(--GrayishBlue);
+}
+
+.card4 {
+    height: 15em;
+    grid-column: 5/7;
+    margin-top: 25%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    grid-row: 2/3;
+    border-top: solid 3px var(--Blue);
+    box-shadow:  5px 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.card4 img {
+    align-self: flex-end;
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
+
+.card4 p {
+    color: var(--GrayishBlue);
+}
+
+h1.t1 {
+    color: var(--GrayishBlue);
+    font-weight: 200;
+}
+
+h1.t2 {
+    margin-top: -1rem;
+}
+
+.titleCard p {
+    margin-top: -0.25rem;
+    color: var(--GrayishBlue);
+    text-align: center;
+}
